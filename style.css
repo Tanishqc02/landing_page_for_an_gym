@@ -1,0 +1,167 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #111, #222);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #000;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #f09d51;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20240329/pngtree-rows-of-dumbbells-in-the-gym-image_15662386.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background: #f09d51;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #e2892c;
+}
+
+/* Features */
+.features {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #1a1a1a;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.feature-card {
+  background: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+}
+.feature-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 4rem 1rem;
+  background: #111;
+  text-align: center;
+}
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.testimonial-card {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+}
+.testimonial-card img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* CTA */
+.cta {
+  background: #f09d51;
+  color: #000;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.cta-btn {
+  margin-top: 1rem;
+  background: #000;
+  color: #fff;
+}
+.cta-btn:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .feature-grid,
+  .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

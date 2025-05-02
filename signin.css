@@ -1,0 +1,41 @@
+/* Sign In Page */
+.signin-body {
+    background: linear-gradient(to right, #111, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .signin-container {
+    background: #1c1c1c;
+    padding: 3rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+  }
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+  .signin-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .signup-link {
+    margin-top: 1rem;
+    color: #aaa;
+  }
+  .signup-link a {
+    color: #f09d51;
+    text-decoration: none;
+  }
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
